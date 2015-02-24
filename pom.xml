@@ -12,7 +12,7 @@
 	<issueManagement>
 		<system>Tickets</system>
 		<url>https://sourceforge.net/p/muleebmsadapter/tickets/</url>
-	</issueManagement>	
+	</issueManagement>
 	<developers>
 		<developer>
 			<id>e.luinstra</id>
@@ -180,13 +180,6 @@
 			</releases>
 		</repository>
 		<repository>
-			<id>muleforge</id>
-			<url>http://repository.muleforge.org</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
 			<id>sonatype-central</id>
 			<name>Sonatype Central</name>
 			<url>https://repository.sonatype.org/content/repositories/central/</url>
@@ -310,7 +303,7 @@
 			<activation>
 	 			<property>
 	  				<name>generate-cpp-cpa-model</name>
-				</property>  				
+				</property>
 			</activation>
 	  		<build>
 	    		<plugins>
@@ -326,7 +319,7 @@
 									</goals>
 									<phase>
 										generate-sources
-									</phase>	
+									</phase>
 									<configuration>
 										<generatePackage>nl.clockwork.mule.ebms.model.cpp.cpa</generatePackage>
 										<generateDirectory>src/main/java</generateDirectory>
@@ -337,11 +330,11 @@
 											<includeBinding>nl/clockwork/mule/ebms/xsd/cpp-cpa-2_0.xjc</includeBinding>
 										</includeBindings>
 										<removeOldOutput>false</removeOldOutput>
-										<verbose>false</verbose>					
+										<verbose>false</verbose>
 									</configuration>
 							</execution>
-						</executions>		
-					</plugin>				
+						</executions>
+					</plugin>
 				</plugins>
 			</build>
 		</profile>
@@ -350,7 +343,7 @@
 			<activation>
 	 			<property>
 	  				<name>generate-ebf-model</name>
-				</property>  				
+				</property>
 			</activation>
 	  		<build>
 	    		<plugins>
@@ -366,7 +359,7 @@
 									</goals>
 									<phase>
 										generate-sources
-									</phase>	
+									</phase>
 									<configuration>
 										<generatePackage>nl.clockwork.mule.ebms.stub.ebf.model.afleveren.bericht</generatePackage>
 										<generateDirectory>src/main/java</generateDirectory>
@@ -374,7 +367,7 @@
 											<includeSchema>nl/clockwork/mule/ebms/stub/ebf/xsd/Afleveren_ebMS_2.0_v1.1.xsd</includeSchema>
 										</includeSchemas>
 										<removeOldOutput>false</removeOldOutput>
-										<verbose>false</verbose>					
+										<verbose>false</verbose>
 									</configuration>
 							</execution>
 							<execution>
@@ -384,7 +377,7 @@
 									</goals>
 									<phase>
 										generate-sources
-									</phase>	
+									</phase>
 									<configuration>
 										<generatePackage>nl.clockwork.mule.ebms.stub.ebf.model.afleveren.bevestiging</generatePackage>
 										<generateDirectory>src/main/java</generateDirectory>
@@ -392,7 +385,7 @@
 											<includeSchema>nl/clockwork/mule/ebms/stub/ebf/xsd/Afleveren_bevestiging_ebMS_2.0_v1.1.xsd</includeSchema>
 										</includeSchemas>
 										<removeOldOutput>false</removeOldOutput>
-										<verbose>false</verbose>					
+										<verbose>false</verbose>
 									</configuration>
 							</execution>
 							<execution>
@@ -402,7 +395,7 @@
 									</goals>
 									<phase>
 										generate-sources
-									</phase>	
+									</phase>
 									<configuration>
 										<generatePackage>nl.clockwork.mule.ebms.stub.ebf.model.aanleveren.bericht</generatePackage>
 										<generateDirectory>src/main/java</generateDirectory>
@@ -410,7 +403,7 @@
 											<includeSchema>nl/clockwork/mule/ebms/stub/ebf/xsd/Aanleveren_ebMS_2.0_v1.1.xsd</includeSchema>
 										</includeSchemas>
 										<removeOldOutput>false</removeOldOutput>
-										<verbose>false</verbose>					
+										<verbose>false</verbose>
 									</configuration>
 							</execution>
 							<execution>
@@ -420,7 +413,7 @@
 									</goals>
 									<phase>
 										generate-sources
-									</phase>	
+									</phase>
 									<configuration>
 										<generatePackage>nl.clockwork.mule.ebms.stub.ebf.model.aanleveren.bevestiging</generatePackage>
 										<generateDirectory>src/main/java</generateDirectory>
@@ -428,11 +421,11 @@
 											<includeSchema>nl/clockwork/mule/ebms/stub/ebf/xsd/Aanleveren_bevestiging_ebMS_2.0_v1.1.xsd</includeSchema>
 										</includeSchemas>
 										<removeOldOutput>false</removeOldOutput>
-										<verbose>false</verbose>					
+										<verbose>false</verbose>
 									</configuration>
 							</execution>
-						</executions>		
-					</plugin>				
+						</executions>
+					</plugin>
 				</plugins>
 			</build>
 		</profile>
@@ -499,12 +492,12 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>jdepend-maven-plugin</artifactId>
 				<version>2.0-beta-2</version>
-			</plugin>		
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.5.2</version>
 			</plugin>
 		</plugins>
-	</reporting>	
+	</reporting>
 </project>
